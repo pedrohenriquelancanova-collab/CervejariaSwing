@@ -12,8 +12,8 @@ package model;
 public class Usuario {
     int id;
     String nome;
-    String senha;
     String email;
+    String senha;
 
     public int getId() {
         return id;
@@ -50,7 +50,7 @@ public class Usuario {
     public Usuario() {
     }
 
-    public Usuario(String nome, String senha, String email) {
+    public Usuario(String nome, String email, String senha) {
         this.nome = nome;
         this.senha = senha;
         this.email = email;
@@ -58,9 +58,8 @@ public class Usuario {
 
     @Override
     public String toString() {
-        return  
-               "Nome : " + nome + "\n" + 
-               "Senha : " + senha + "\n" +
-               "Email: " + email;
-    } 
+        return "Nome : " + nome + "\n"
+                + "Email : " + email + "\n"
+                + "Senha: " + senha;
+    }
 }
