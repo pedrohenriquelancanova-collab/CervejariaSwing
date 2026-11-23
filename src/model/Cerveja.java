@@ -15,7 +15,7 @@ public class Cerveja {
     int id;
     String nome;
     String tipo;
-    double teorAlcoolico;
+    String teorAlcoolico;
     String ibu;
     String paisOrigem;
     String fabricante;
@@ -27,7 +27,7 @@ public class Cerveja {
     public Cerveja() {
     }
 
-    public Cerveja(String nome, String tipo, double teorAlcoolico, String ibu, String paisOrigem, String fabricante, Date data, String localDegustacao, double avaliacao, String comentarios) {
+    public Cerveja(String nome, String tipo, String teorAlcoolico, String ibu, String paisOrigem, String fabricante, Date data, String localDegustacao, double avaliacao, String comentarios) {
         this.nome = nome;
         this.tipo = tipo;
         this.teorAlcoolico = teorAlcoolico;
@@ -64,11 +64,11 @@ public class Cerveja {
         this.tipo = tipo;
     }
 
-    public double getTeorAlcoolico() {
+    public String getTeorAlcoolico() {
         return teorAlcoolico;
     }
 
-    public void setTeorAlcoolico(double teorAlcoolico) {
+    public void setTeorAlcoolico(String teorAlcoolico) {
         this.teorAlcoolico = teorAlcoolico;
     }
 

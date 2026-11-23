@@ -50,8 +50,7 @@ public class Usuario {
     public Usuario() {
     }
 
-    public Usuario(int id, String nome, String senha, String email) {
-        this.id = id;
+    public Usuario(String nome, String senha, String email) {
         this.nome = nome;
         this.senha = senha;
         this.email = email;
